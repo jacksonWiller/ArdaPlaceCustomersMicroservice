@@ -1,6 +1,6 @@
-# ArdaPlace Catalog Microservice
+# ArdaPlace Customers Microservice
 
-Welcome to the **ArdaPlace Catalog Microservice**! This microservice is a key component of the ArdaPlace E-commerce Project, designed to manage and serve product catalog data efficiently.
+Welcome to the **ArdaPlace Customers Microservice**! This microservice is a key component of the ArdaPlace E-commerce Project, designed to manage and serve customer data efficiently.
 
 ## About the Repository
 
@@ -24,7 +24,7 @@ This open-source project is written in the latest version of **ASP.NET Core**, i
 
 ## Architecture
 
-!CQRS Pattern
+![Architecture](img/Customer Service.drawio.png)
 
 - Full architecture with responsibility separation concerns, adhering to SOLID principles and Clean Code practices
 - **Domain Driven Design (DDD)** with layers and domain model pattern
