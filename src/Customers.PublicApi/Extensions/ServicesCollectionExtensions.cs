@@ -22,7 +22,7 @@ internal static class ServicesCollectionExtensions
 {
     private const int DbMaxRetryCount = 3;
     private const int DbCommandTimeout = 35;
-    private const string DbMigrationAssemblyName = "Shop.PublicApi";
+    private const string DbMigrationAssemblyName = "Customers.PublicApi";
     private const string RedisInstanceName = "master";
 
     private static readonly string[] DbRelationalTags = ["database", "ef-core", "sql-server", "relational"];
@@ -35,7 +35,7 @@ internal static class ServicesCollectionExtensions
             swaggerOptions.SwaggerDoc("v1", new OpenApiInfo
             {
                 Version = "v1",
-                Title = "Shop (e-commerce)",
+                Title = "Customers (Arada Place e-commerce)",
                 Description = "ASP.NET Core C# CQRS Event Sourcing, REST API, DDD, SOLID Principles and Clean Architecture",
                 Contact = new OpenApiContact
                 {
