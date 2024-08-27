@@ -7,32 +7,32 @@ networks:
 services:
 
   # ASP.NET Core Web API Application
-  shop-webapi:
-    image: ${DOCKER_REGISTRY-}shop-webapi
-    container_name: shop-webapi
+  costume-webapi:
+    image: ${DOCKER_REGISTRY-}costume-webapi
+    container_name: costume-webapi
     restart: always
     build:
       context: .
-      dockerfile: src/Shop.PublicApi/Dockerfile
+      dockerfile: src/costume.PublicApi/Dockerfile
     expose:
       - 80
     links:
-      - shop-sql-server
-      - shop-mongo-server
-      - shop-redis
+      - costume-sql-server
+      - costume-mongo-server
+      - costume-redis
     networks:
       - app-network
     depends_on:
-      - shop-sql-server
-      - shop-mongo-server
-      - shop-redis
+      - costume-sql-server
+      - costume-mongo-server
+      - costume-redis
 
   # SQL Server
-  shop-sql-server:
+  costume-sql-server:
     image: mcr.microsoft.com/azure-sql-edge:latest
     cap_add: [ 'SYS_PTRACE' ]
     hostname: mssql
-    container_name: shop-sql-server
+    container_name: costume-sql-server
     restart: always
     expose:
       - 1434
@@ -45,9 +45,9 @@ services:
       - app-network
 
   # MongoDB Server
-  shop-mongo-server:
+  costume-mongo-server:
     image: mongo:4.4
-    container_name: shop-mongo-server
+    container_name: costume-mongo-server
     restart: always
     expose:
       - 27019
@@ -57,9 +57,9 @@ services:
       - app-network
 
   # Redis Cache Server
-  shop-redis:
+  costume-redis:
     image: redis:latest
-    container_name: shop-redis
+    container_name: costume-redis
     command: redis-server --requirepass pMA63033n6tF
     restart: always
     expose:
