@@ -1,88 +1,52 @@
-# ASP.NET Core C# CQRS Event Sourcing, REST API, DDD, SOLID Principles and Clean Architecture
+# ArdaPlace Catalog Microservice
 
-[![Build](https://github.com/jeangatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing/actions/workflows/dotnet.yml/badge.svg)](https://github.com/jeangatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing/actions/workflows/dotnet.yml)
-[![SonarCloud](https://github.com/JeanGatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing/actions/workflows/sonar-cloud.yml/badge.svg)](https://github.com/JeanGatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing/actions/workflows/sonar-cloud.yml)
-[![CodeQL](https://github.com/jeangatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/jeangatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing/actions/workflows/codeql-analysis.yml)
-[![DevSkim](https://github.com/jeangatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing/actions/workflows/devskim-analysis.yml/badge.svg)](https://github.com/jeangatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing/actions/workflows/devskim-analysis.yml)
-[![License](https://img.shields.io/github/license/jeangatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing.svg)](LICENSE)
+Welcome to the **ArdaPlace Catalog Microservice**! This microservice is a key component of the ArdaPlace E-commerce Project, designed to manage and serve product catalog data efficiently.
 
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing&metric=coverage)](https://sonarcloud.io/dashboard?id=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing&metric=bugs)](https://sonarcloud.io/dashboard?id=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing&metric=code_smells)](https://sonarcloud.io/dashboard?id=ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing)
+## About the Repository
 
-[![Sparkline](https://stars.medv.io/jeangatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing.svg)](https://stars.medv.io/jeangatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing)
+This open-source project is written in the latest version of **ASP.NET Core**, implementing the concepts of **S.O.L.I.D**, **Clean Code**, and **CQRS (Command Query Responsibility Segregation)**.
 
-About the repoitory:
-Open source project written in the latest version of ASP.NET Core, implementing the concepts of S.O.L.I.D, Clean Code,
-CQRS (Command Query Responsibility Segregation)
+## Technologies
 
-## Give it a star! ⭐
+- **ASP.NET Core 8**
+- **Entity Framework Core 8**
+- **Unit & Integration Tests** with xUnit and FluentAssertions
+- **Polly** for resilience and transient fault handling
+- **AutoMapper** for object-object mapping
+- **FluentValidator** for validation
+- **MediatR** for implementing CQRS
+- **Swagger UI** for API documentation
+- **HealthChecks** for monitoring
+- **SQL Server** for relational database
+- **MongoDB** for NoSQL database
+- **Redis** for caching
+- **Docker & Docker Compose** for containerization
 
-If you liked this project, learned something, give it a star. Thank you!
+## Architecture
 
-## **Technologies**
+!CQRS Pattern
 
-- ASP.NET Core 8
-- Entity Framework Core 8
-- Unit & Integration Tests + xUnit + FluentAssertions
-- Polly
-- AutoMapper
-- FluentValidator
-- MediatR
-- Swagger UI
-- HealthChecks
-- SQL Server
-- MongoDB
-- Redis (Cache)
-- Docker & Docker Compose
+- Full architecture with responsibility separation concerns, adhering to SOLID principles and Clean Code practices
+- **Domain Driven Design (DDD)** with layers and domain model pattern
+- **Domain Events** for decoupling and handling side effects
+- **Domain Notifications** for handling business rule violations
+- **Domain Validations** to ensure data integrity
+- **CQRS** for separating read and write operations
+- **Event Sourcing** for capturing all changes to an application state as a sequence of events
+- **Unit of Work** for managing transactions
+- **Repository Pattern** for data access
+- **Result Pattern** for handling operation results
 
-## **Architecture**
+## Running the Application
 
-![CQRS Pattern](img/cqrs-pattern.png "CQRS Pattern")
+After cloning the repository to your desired folder, run the following commands in the terminal at the root of the project:
 
-- Full architecture with responsibility separation concerns, SOLID and Clean Code
-- Domain Driven Design (Layers and Domain Model Pattern)
-- Domain Events
-- Domain Notification
-- Domain Validations
-- CQRS
-- Event Sourcing
-- Unit of Work
-- Repository Pattern
-- Resut Pattern
+1. **Clean and build the project:**
+   ```bash
+   dotnet clean && dotnet build
 
-## Running the application
-
-After cloning the repository to the desired folder, run the command in the terminal at the root of the project:
-
-```csharp
-dotnet clean && dotnet build
-```
-
-Next step, run the command in the terminal:
-
-```csharp
+Build and run the Docker containers:
 docker-compose up --build
-```
 
-Now just open the url in the browser:
-
-```csharp
+Access the application via Swagger UI:
 http://localhost:5072/swagger/
-```
-
-## MiniProfiler for .NET
-
-To access the page with the performance indicators and performance:
-
-```csharp
-http://localhost:5072/profiler/results-index
-```
-
-## License
-
-- [MIT License](https://github.com/jeangatto/ASP.NET-Core-Clean-Architecture-CQRS-Event-Sourcing/blob/main/LICENSE)

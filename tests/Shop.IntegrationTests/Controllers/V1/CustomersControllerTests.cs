@@ -28,11 +28,11 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
-using Shop.IntegrationTests.Extensions;
+using Customers.IntegrationTests.Extensions;
 using Xunit;
 using Xunit.Categories;
 
-namespace Shop.IntegrationTests.Controllers.V1;
+namespace Customers.IntegrationTests.Controllers.V1;
 
 [IntegrationTest]
 public class CustomersControllerTests : IAsyncLifetime

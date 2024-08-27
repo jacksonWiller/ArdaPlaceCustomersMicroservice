@@ -7,7 +7,7 @@ using FluentAssertions;
 using Xunit;
 using Xunit.Categories;
 
-namespace Shop.UnitTests.Domain.Entities.CustomerAggregate;
+namespace Customers.UnitTests.Domain.Entities.CustomerAggregate;
 
 [UnitTest]
 public class CustomerTests

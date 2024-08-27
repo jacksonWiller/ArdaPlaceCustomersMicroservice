@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Xunit;
 using Xunit.Categories;
 
-namespace Shop.UnitTests.Core.Extensions;
+namespace Customers.UnitTests.Core.Extensions;
 
 [UnitTest]
 public class ConfigurationExtensionsTests

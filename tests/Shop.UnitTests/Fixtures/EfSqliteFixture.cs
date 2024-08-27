@@ -5,7 +5,7 @@ using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 
-namespace Shop.UnitTests.Fixtures;
+namespace Customers.UnitTests.Fixtures;
 
 public class EfSqliteFixture : IAsyncLifetime, IDisposable
 {

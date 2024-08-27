@@ -5,11 +5,11 @@ using Customers.Core.Extensions;
 using FluentAssertions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Shop.Core.Extensions;
+using Customers.Core.Extensions;
 using Xunit;
 using Xunit.Categories;
 
-namespace Shop.UnitTests.Core.Extensions;
+namespace Customers.UnitTests.Core.Extensions;
 
 [UnitTest]
 public class ServicesCollectionExtensionsTests

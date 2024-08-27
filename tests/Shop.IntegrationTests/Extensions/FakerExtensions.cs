@@ -1,7 +1,7 @@
 using System;
 using Bogus;
 
-namespace Shop.IntegrationTests.Extensions;
+namespace Customers.IntegrationTests.Extensions;
 
 internal static class FakerExtensions
 {

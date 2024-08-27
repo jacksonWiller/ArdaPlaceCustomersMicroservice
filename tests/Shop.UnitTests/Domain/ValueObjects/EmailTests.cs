@@ -3,7 +3,7 @@ using FluentAssertions;
 using Xunit;
 using Xunit.Categories;
 
-namespace Shop.UnitTests.Domain.ValueObjects;
+namespace Customers.UnitTests.Domain.ValueObjects;
 
 [UnitTest]
 public class EmailTests

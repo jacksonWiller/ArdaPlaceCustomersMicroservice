@@ -4,7 +4,7 @@ using FluentAssertions;
 using Xunit;
 using Xunit.Categories;
 
-namespace Shop.UnitTests.Query.Profiles;
+namespace Customers.UnitTests.Query.Profiles;
 
 [UnitTest]
 public class AutoMapperTests

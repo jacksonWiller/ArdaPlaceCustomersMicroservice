@@ -10,13 +10,13 @@ using FluentAssertions;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
-using Shop.Application.Customer.Handlers;
-using Shop.Infrastructure.Data.Repositories;
-using Shop.UnitTests.Fixtures;
+using Customers.Application.Customer.Handlers;
+using Customers.Infrastructure.Data.Repositories;
+using Customers.UnitTests.Fixtures;
 using Xunit;
 using Xunit.Categories;
 
-namespace Shop.UnitTests.Application.Customer.Handlers;
+namespace Customers.UnitTests.Application.Customer.Handlers;
 
 [UnitTest]
 public class UpdateCustomerCommandHandlerTest(EfSqliteFixture fixture) : IClassFixture<EfSqliteFixture>
