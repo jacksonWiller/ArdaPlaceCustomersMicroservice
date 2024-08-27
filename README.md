@@ -24,7 +24,8 @@ This open-source project is written in the latest version of **ASP.NET Core**, i
 
 ## Architecture
 
-![Architecture](img/Customer Service.drawio.png)
+![Architecture](img/customer-service.drawio.png)
+![CQRS Pattern](img/customer-service.drawio.png "CQRS Pattern")
 
 - Full architecture with responsibility separation concerns, adhering to SOLID principles and Clean Code practices
 - **Domain Driven Design (DDD)** with layers and domain model pattern
